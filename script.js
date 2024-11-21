@@ -9,3 +9,15 @@
 // also want to call this function again when the user saves their preferences to
 // immediately apply them. Make sure you also notify the user somehow that the preferences
 // were saved.
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the form element by its ID
+    const form = document.getElementById('preferences-form');
+    // Get the input element for the user's name by its ID
+    const nameInput = document.getElementById('name');
+    // Get the input element for the background color by its ID
+    const bgColorInput = document.getElementById('background-color');
+    // Get the input element for the foreground color by its ID
+    const fgColorInput = document.getElementById('foreground-color');
+    // Get the element where the greeting will be displayed by its ID
+    const greeting = document.getElementById('greeting');
