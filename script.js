@@ -45,4 +45,18 @@ if (savedFgColor) {
     document.body.style.color = savedFgColor;
 }
 }
+// Apply preferences when the page loads
+applyPreferences();
+
+// Save preferences when the form is submitted
+form.addEventListener('submit', function(event) {
+    // Prevent the default form submission
+    event.preventDefault();
+
+    // Save the user's name to localStorage
+    localStorage.setItem('name', nameInput.value);
+    // Save the background color to localStorage
+    localStorage.setItem('backgroundColor', bgColorInput.value);
+    // Save the foreground color to localStorage
+    localStorage.setItem('foregroundColor', fgColorInput.value);
 
