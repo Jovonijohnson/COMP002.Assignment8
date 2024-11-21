@@ -21,3 +21,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const fgColorInput = document.getElementById('foreground-color');
     // Get the element where the greeting will be displayed by its ID
     const greeting = document.getElementById('greeting');
+
+    // Function to apply saved preferences
+    function applyPreferences() {
+        // Retrieve the saved name from localStorage
+        const savedName = localStorage.getItem('name');
+        // Retrieve the saved background color from localStorage
+        const savedBgColor = localStorage.getItem('backgroundColor');
+        // Retrieve the saved foreground color from localStorage
+        const savedFgColor = localStorage.getItem('foregroundColor');
+
