@@ -30,4 +30,19 @@ document.addEventListener("DOMContentLoaded", function() {
         const savedBgColor = localStorage.getItem('backgroundColor');
         // Retrieve the saved foreground color from localStorage
         const savedFgColor = localStorage.getItem('foregroundColor');
+  // If a saved name is found, set the greeting text
+  if (savedName) {
+    greeting.textContent = `Welcome back, ${savedName}!`;
+}
+
+// If a saved background color is found, apply it to the body
+if (savedBgColor) {
+    document.body.style.backgroundColor = savedBgColor;
+}
+
+// If a saved foreground color is found, apply it to the body
+if (savedFgColor) {
+    document.body.style.color = savedFgColor;
+}
+}
 
