@@ -60,3 +60,10 @@ form.addEventListener('submit', function(event) {
     // Save the foreground color to localStorage
     localStorage.setItem('foregroundColor', fgColorInput.value);
 
+// Apply the preferences immediately
+applyPreferences();
+
+// Notify the user that the preferences were saved
+alert('Preferences saved successfully!');
+});
+});
